@@ -59,7 +59,7 @@ function atualizaTabela() {
 function atualizaMedia() {
     var media = calculaMedia();
 
-    document.getElementById('media-nota').innerHTML = media;
+    document.getElementById('media-nota').innerHTML = media.toFixed(2);
     document.getElementById('media-resultado').innerHTML = media >= 7 ? spanAprovado : spanReprovado;
 
 }
